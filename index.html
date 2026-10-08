@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FF Championship 2026 - Pendaftaran Turnamen Free Fire</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Orbitron, Rajdhani & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Rajdhani:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            orange: '#FF5500',
+                            gold: '#FFAA00',
+                            dark: '#07090E',
+                            card: '#111520',
+                            cardHover: '#181F2E',
+                            cyan: '#00E5FF',
+                            purple: '#A855F7'
+                        }
+                    },
+                    fontFamily: {
+                        orbitron: ['Orbitron', 'sans-serif'],
+                        rajdhani: ['Rajdhani', 'sans-serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #07090E;
+            color: #F3F4F6;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        /* Subtle Gaming Cyber Background Mesh Grid */
+        .cyber-bg-pattern {
+            background-image: 
+                radial-gradient(circle at 50% 30%, rgba(255, 85, 0, 0.12) 0%, transparent 65%),
+                linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+            background-size: 100% 100%, 36px 36px, 36px 36px;
+        }
+
+        /* High Readability Frosted Glass Cards */
+        .glass-card {
+            background: rgba(17, 21, 32, 0.88);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(255, 85, 0, 0.5);
+            box-shadow: 0 12px 35px -5px rgba(255, 85, 0, 0.3);
+        }
+
+        .glow-orange {
+            box-shadow: 0 0 30px rgba(255, 85, 0, 0.35);
+        }
+        
+        .glow-gold {
+            box-shadow: 0 0 30px rgba(255, 170, 0, 0.35);
+        }
+
+        .text-glow {
+            text-shadow: 0 0 18px rgba(255, 85, 0, 0.75);
+        }
+
+        .text-glow-gold {
+            text-shadow: 0 0 18px rgba(255, 170, 0, 0.75);
+        }
+
+        /* Ambient Animated Glowing Orbs */
+        @keyframes floatOrb {
+            0%, 100% { transform: translateY(0px) scale(1); opacity: 0.45; }
+            50% { transform: translateY(-30px) scale(1.1); opacity: 0.65; }
+        }
+
+        .animated-orb-1 {
+            animation: floatOrb 9s ease-in-out infinite;
+        }
+
+        .animated-orb-2 {
+            animation: floatOrb 12s ease-in-out infinite reverse;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #07090E;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #FF5500, #FFAA00);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="cyber-bg-pattern min-h-screen flex flex-col justify-between selection:bg-brand-orange selection:text-white relative">
+
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <div class="animated-orb-1 absolute top-[-10%] left-[15%] w-[500px] h-[500px] bg-brand-orange/20 rounded-full blur-[140px]"></div>
+        <div class="animated-orb-2 absolute top-[35%] right-[-5%] w-[480px] h-[480px] bg-brand-gold/20 rounded-full blur-[130px]"></div>
+        <div class="animated-orb-1 absolute bottom-[10%] left-[-5%] w-[550px] h-[550px] bg-brand-purple/15 rounded-full blur-[160px]"></div>
+    </div>
+
+    <nav class="sticky top-0 z-50 bg-[#07090E]/90 backdrop-blur-md border-b border-brand-orange/30 transition-all shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3 cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                    <div class="w-11 h-11 bg-gradient-to-tr from-brand-orange to-brand-gold rounded-xl flex items-center justify-center transform -rotate-3 shadow-lg shadow-brand-orange/40 border border-white/20">
+                        <i class="fa-solid fa-fire text-black text-2xl"></i>
+                    </div>
+                    <div>
+                        <span class="font-orbitron font-extrabold text-xl sm:text-2xl tracking-wider text-white">FF<span class="text-brand-orange">ARENA</span></span>
+                        <span class="block text-[10px] tracking-widest text-brand-gold font-rajdhani font-bold uppercase">Championship Season 5</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <div class="hidden lg:flex items-center space-x-7 font-rajdhani text-lg font-bold tracking-wide">
+                    <a href="#about" class="text-gray-200 hover:text-brand-orange transition-colors">Jadwal</a>
+                    <a href="#hadiah" class="text-gray-200 hover:text-brand-orange transition-colors">Prize Pool</a>
+                    <a href="#pendaftaran" class="text-gray-200 hover:text-brand-orange transition-colors">Form Daftar</a>
+                    <a href="#tim" class="text-gray-200 hover:text-brand-orange transition-colors">Tim Terdaftar</a>
+                    <a href="#bracket" class="text-gray-200 hover:text-brand-orange transition-colors">Bagan Match</a>
+                    <a href="#ulasan" class="text-gray-200 hover:text-brand-orange transition-colors">Ulasan Peserta</a>
+                    <a href="#faq" class="text-gray-200 hover:text-brand-orange transition-colors">FAQ</a>
+                </div>
+
+                <!-- Header CTA Button -->
+                <div class="hidden sm:block">
+                    <a href="#pendaftaran" class="relative inline-flex items-center justify-center px-6 py-2.5 font-orbitron font-extrabold text-sm text-black bg-gradient-to-r from-brand-orange via-brand-gold to-brand-orange bg-[length:200%_100%] hover:bg-right transition-all duration-300 rounded-lg shadow-lg shadow-brand-orange/30 hover:scale-105 active:scale-95">
+                        <i class="fa-solid fa-gamepad mr-2"></i> DAFTAR TIM
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-btn" class="p-2 text-gray-200 hover:text-brand-orange focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-[#0A0D14]/98 border-b border-brand-orange/30 px-4 pt-2 pb-6 space-y-3 font-rajdhani text-lg font-bold">
+            <a href="#about" class="block py-2 text-gray-200 hover:text-brand-orange" onclick="toggleMenu()">Jadwal & Rule</a>
+            <a href="#hadiah" class="block py-2 text-gray-200 hover:text-brand-orange" onclick="toggleMenu()">Prize Pool</a>
+            <a href="#pendaftaran" class="block py-2 text-gray-200 hover:text-brand-orange" onclick="toggleMenu()">Form Daftar</a>
+            <a href="#tim" class="block py-2 text-gray-200 hover:text-brand-orange" onclick="toggleMenu()">Tim Terdaftar</a>
+            <a href="#bracket" class="block py-2 text-gray-200 hover:text-brand-orange" onclick="toggleMenu()">Bagan Match</a>
+            <a href="#ulasan" class="block py-2 text-gray-200 hover:text-brand-orange" onclick="toggleMenu()">Ulasan Peserta</a>
+            <a href="#faq" class="block py-2 text-gray-200 hover:text-brand-orange" onclick="toggleMenu()">FAQ & CS</a>
+            <a href="#pendaftaran" class="block text-center py-3 font-orbitron font-bold text-black bg-gradient-to-r from-brand-orange to-brand-gold rounded-lg shadow-md" onclick="toggleMenu()">
+                DAFTAR SEKARANG
+            </a>
+        </div>
+    </nav>
+
+    <header class="relative overflow-hidden py-16 lg:py-24 border-b border-gray-800/80 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            
+            <!-- Status Badge -->
+            <div class="inline-flex items-center space-x-2 bg-brand-orange/15 border border-brand-orange/60 text-brand-orange px-4 py-1.5 rounded-full text-xs sm:text-sm font-extrabold uppercase tracking-widest mb-6 backdrop-blur-md shadow-lg shadow-brand-orange/20 animate-pulse">
+                <span class="w-2.5 h-2.5 rounded-full bg-brand-orange animate-ping"></span>
+                <span>Pendaftaran Gelombang 1 Dibuka</span>
+            </div>
+
+            <!-- Main Tournament Title -->
+            <h1 class="font-orbitron text-3xl sm:text-5xl lg:text-7xl font-black tracking-tight leading-tight uppercase text-white">
+                FREE FIRE BATTLE ROYALE <br class="hidden sm:block"/>
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-brand-orange via-brand-gold to-white text-glow">
+                    CHAMPIONSHIP 2026
+                </span>
+            </h1>
+
+            <p class="mt-4 max-w-2xl mx-auto text-gray-300 text-sm sm:text-base font-semibold leading-relaxed">
+                Buktikan ketangguhan skuatmu di panggung esports tertinggi! Rebut piala bergengsi, e-certificate resmi, dan total prize pool puluhan juta rupiah.
+            </p>
+
+            <!-- Key Info Stat Cards -->
+            <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                <div class="glass-card p-4 rounded-xl text-center border-t-2 border-t-brand-gold/80">
+                    <div class="text-xs text-gray-300 uppercase font-rajdhani font-extrabold">Total Prize Pool</div>
+                    <div class="font-orbitron font-black text-xl sm:text-2xl text-brand-gold mt-1 text-glow-gold">Rp 15.000.000</div>
+                    <div class="text-[11px] text-brand-orange font-bold">+ 50.000 Diamonds</div>
+                </div>
+                <div class="glass-card p-4 rounded-xl text-center border-t-2 border-t-brand-orange/80">
+                    <div class="text-xs text-gray-300 uppercase font-rajdhani font-extrabold">Slot Terisi</div>
+                    <div class="font-orbitron font-black text-xl sm:text-2xl text-white mt-1" id="slot-counter">42 / 64</div>
+                    <div class="text-[11px] text-emerald-400 font-bold">Tersisa 22 Slot Lagi!</div>
+                </div>
+                <div class="glass-card p-4 rounded-xl text-center border-t-2 border-t-brand-cyan/80">
+                    <div class="text-xs text-gray-300 uppercase font-rajdhani font-extrabold">Mode Match</div>
+                    <div class="font-orbitron font-black text-xl sm:text-2xl text-brand-cyan mt-1">SQUAD 4v4</div>
+                    <div class="text-[11px] text-gray-300">Battle Royale System</div>
+                </div>
+                <div class="glass-card p-4 rounded-xl text-center border-t-2 border-t-emerald-500/80">
+                    <div class="text-xs text-gray-300 uppercase font-rajdhani font-extrabold">Biaya Pendaftaran</div>
+                    <div class="font-orbitron font-black text-xl sm:text-2xl text-emerald-400 mt-1">100% GRATIS</div>
+                    <div class="text-[11px] text-gray-300">Syarat: Follow IG Panitia</div>
+                </div>
+            </div>
+
+            <!-- Countdown Timer Box -->
+            <div class="mt-10 max-w-xl mx-auto glass-card border border-brand-orange/50 p-6 rounded-2xl shadow-2xl relative overflow-hidden">
+                <div class="absolute -right-8 -top-8 w-28 h-28 bg-brand-orange/20 rounded-full blur-2xl"></div>
+                <h3 class="font-orbitron text-xs sm:text-sm text-gray-200 uppercase tracking-widest mb-4 font-bold">Pendaftaran Ditutup Dalam:</h3>
+                <div class="grid grid-cols-4 gap-3 text-center">
+                    <div class="bg-[#07090E]/90 p-3 rounded-xl border border-gray-700/80 shadow-inner">
+                        <span id="timer-days" class="font-orbitron font-extrabold text-2xl sm:text-3xl text-brand-orange">05</span>
+                        <span class="block text-[10px] text-gray-300 uppercase tracking-wider font-rajdhani font-bold">Hari</span>
+                    </div>
+                    <div class="bg-[#07090E]/90 p-3 rounded-xl border border-gray-700/80 shadow-inner">
+                        <span id="timer-hours" class="font-orbitron font-extrabold text-2xl sm:text-3xl text-brand-orange">14</span>
+                        <span class="block text-[10px] text-gray-300 uppercase tracking-wider font-rajdhani font-bold">Jam</span>
+                    </div>
+                    <div class="bg-[#07090E]/90 p-3 rounded-xl border border-gray-700/80 shadow-inner">
+                        <span id="timer-minutes" class="font-orbitron font-extrabold text-2xl sm:text-3xl text-brand-orange">32</span>
+                        <span class="block text-[10px] text-gray-300 uppercase tracking-wider font-rajdhani font-bold">Menit</span>
+                    </div>
+                    <div class="bg-[#07090E]/90 p-3 rounded-xl border border-gray-700/80 shadow-inner">
+                        <span id="timer-seconds" class="font-orbitron font-extrabold text-2xl sm:text-3xl text-brand-orange">45</span>
+                        <span class="block text-[10px] text-gray-300 uppercase tracking-wider font-rajdhani font-bold">Detik</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+                <a href="#pendaftaran" class="px-8 py-4 font-orbitron font-extrabold text-base text-black bg-gradient-to-r from-brand-orange via-brand-gold to-brand-orange bg-[length:200%_100%] hover:bg-right transition-all duration-300 rounded-xl shadow-xl shadow-brand-orange/30 hover:scale-105 active:scale-95 flex items-center">
+                    <i class="fa-solid fa-paper-plane mr-2"></i> DAFTARKAN TIM SEKARANG
+                </a>
+                <button onclick="openRulesModal()" class="px-6 py-4 font-orbitron font-bold text-base text-white glass-card hover:bg-brand-cardHover border border-brand-orange/50 rounded-xl transition-all flex items-center shadow-lg">
+                    <i class="fa-solid fa-scroll mr-2 text-brand-gold"></i> BACA RULEBOOK
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="hadiah" class="py-16 bg-[#07090E]/60 border-b border-gray-800/80 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-orbitron text-2xl sm:text-4xl font-extrabold uppercase text-white">
+                    PRIZE POOL & <span class="text-brand-gold text-glow-gold">PENGHARGAAN</span>
+                </h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-brand-orange to-brand-gold mx-auto mt-2 rounded-full"></div>
+                <p class="mt-3 text-gray-300 text-sm font-semibold">Total hadiah tunai, trophy bergengsi, e-certificate resmi, dan ribuan Diamond Free Fire!</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
+                <!-- JUARA 2 -->
+                <div class="glass-card p-6 rounded-2xl text-center relative overflow-hidden group hover:-translate-y-2 transition-transform duration-300 order-2 md:order-1 border-t-2 border-t-gray-300">
+                    <div class="w-16 h-16 bg-gray-300/15 rounded-full flex items-center justify-center mx-auto mb-4 border border-gray-300/40 shadow-inner">
+                        <i class="fa-solid fa-trophy text-3xl text-gray-300"></i>
+                    </div>
+                    <span class="inline-block px-3 py-1 bg-gray-400/20 text-gray-200 font-orbitron font-bold text-xs rounded-full uppercase mb-2 border border-gray-400/30">JUARA 2 (RUNNER UP)</span>
+                    <h3 class="font-orbitron font-black text-2xl sm:text-3xl text-white">Rp 4.500.000</h3>
+                    <p class="text-xs text-brand-gold mt-1 font-bold">+ 15.000 Diamond FF + E-Certificate</p>
+                </div>
+
+                <!-- JUARA 1 -->
+                <div class="glass-card p-8 rounded-2xl text-center relative overflow-hidden group hover:-translate-y-3 transition-transform duration-300 glow-gold border-2 border-brand-gold bg-gradient-to-b from-brand-card via-brand-card to-brand-gold/15 order-1 md:order-2">
+                    <div class="absolute top-0 right-0 bg-brand-gold text-black text-[10px] font-black font-orbitron px-3 py-1 rounded-bl-lg shadow-md">
+                        MAIN CHAMPION
+                    </div>
+                    <div class="w-20 h-20 bg-brand-gold/20 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-brand-gold shadow-lg shadow-brand-gold/40">
+                        <i class="fa-solid fa-crown text-4xl text-brand-gold animate-bounce"></i>
+                    </div>
+                    <span class="inline-block px-4 py-1 bg-brand-gold/20 text-brand-gold font-orbitron font-bold text-sm rounded-full uppercase mb-2 border border-brand-gold/40">JUARA 1 (CHAMPION)</span>
+                    <h3 class="font-orbitron font-black text-3xl sm:text-4xl text-white text-glow-gold">Rp 8.000.000</h3>
+                    <p class="text-xs text-brand-gold mt-2 font-black">+ Trophy Resmi + 25.000 Diamond FF + Certificate</p>
+                </div>
+
+                <!-- JUARA 3 -->
+                <div class="glass-card p-6 rounded-2xl text-center relative overflow-hidden group hover:-translate-y-2 transition-transform duration-300 order-3 border-t-2 border-t-amber-600">
+                    <div class="w-16 h-16 bg-amber-700/15 rounded-full flex items-center justify-center mx-auto mb-4 border border-amber-600/40 shadow-inner">
+                        <i class="fa-solid fa-trophy text-3xl text-amber-500"></i>
+                    </div>
+                    <span class="inline-block px-3 py-1 bg-amber-600/20 text-amber-400 font-orbitron font-bold text-xs rounded-full uppercase mb-2 border border-amber-600/30">JUARA 3</span>
+                    <h3 class="font-orbitron font-black text-2xl sm:text-3xl text-white">Rp 2.500.000</h3>
+                    <p class="text-xs text-brand-gold mt-1 font-bold">+ 10.000 Diamond FF + E-Certificate</p>
+                </div>
+            </div>
+
+            <!-- Extra Category Awards -->
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
+                <div class="glass-card p-4 rounded-xl border border-gray-700 flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center text-red-500 font-bold text-xl border border-red-500/30 shrink-0">
+                        <i class="fa-solid fa-skull"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-orbitron font-bold text-white text-sm">TERMINATOR / MVP</h4>
+                        <p class="text-xs text-gray-300 font-medium">Pemain Kills Terbanyak: <span class="text-brand-gold font-bold">Rp 1.000.000</span></p>
+                    </div>
+                </div>
+                <div class="glass-card p-4 rounded-xl border border-gray-700 flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-brand-cyan/20 rounded-lg flex items-center justify-center text-brand-cyan font-bold text-xl border border-brand-cyan/30 shrink-0">
+                        <i class="fa-solid fa-fire-flame-curved"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-orbitron font-bold text-white text-sm">MOST FAVORITE TEAM</h4>
+                        <p class="text-xs text-gray-300 font-medium">Tim Terfavorit Voting: <span class="text-brand-gold font-bold">5.000 Diamonds</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HALL OF FAME: VALL ZONE G.O.A.T AWARD -->
+            <div class="mt-10 max-w-4xl mx-auto glass-card border-2 border-brand-gold p-6 sm:p-8 rounded-2xl relative overflow-hidden glow-gold bg-gradient-to-r from-brand-purple/25 via-brand-card to-brand-gold/20">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-brand-gold to-brand-orange rounded-2xl flex items-center justify-center text-black shadow-lg shadow-brand-gold/50 transform -rotate-3 shrink-0">
+                            <i class="fa-solid fa-award text-3xl sm:text-4xl"></i>
+                        </div>
+                        <div>
+                            <div class="inline-flex items-center space-x-1.5 px-3 py-0.5 bg-brand-gold/20 border border-brand-gold text-brand-gold text-[10px] font-orbitron font-black rounded-full uppercase tracking-widest mb-1">
+                                <i class="fa-solid fa-crown text-xs"></i>
+                                <span>HALL OF FAME & G.O.A.T AWARD</span>
+                            </div>
+                            <h3 class="font-orbitron font-black text-xl sm:text-2xl text-white">
+                                PEMAIN TERBAIK SEPANJANG MASA: <span class="text-brand-gold text-glow-gold">VALL ZONE</span>
+                            </h3>
+                            <p class="text-xs sm:text-sm text-gray-200 mt-1 font-semibold leading-relaxed">
+                                Penghargaan kehormatan tertinggi atas dominasi, statistik clutch luar biasa, dan kontribusi legendaris di FF Arena Championship.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-[#07090E]/90 p-4 rounded-xl border border-brand-gold/60 text-center w-full md:w-auto shrink-0 shadow-inner">
+                        <div class="text-[10px] text-gray-300 uppercase font-rajdhani font-extrabold">SPECIAL HONOR FOR VALL ZONE</div>
+                        <div class="font-orbitron font-black text-lg text-brand-gold mt-1">G.O.A.T TROPHY</div>
+                        <div class="text-[11px] text-brand-cyan font-bold">+ Custom Title Legend</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 border-b border-gray-800/80 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-brand-orange font-rajdhani font-bold text-lg uppercase tracking-wider">Langkah Menuju Kemenangan</span>
+                    <h2 class="font-orbitron text-2xl sm:text-4xl font-extrabold uppercase text-white mt-1">
+                        JADWAL & SKEMA MATCH
+                    </h2>
+                    <p class="mt-4 text-gray-300 text-sm sm:text-base leading-relaxed font-semibold">
+                        Lomba diselenggarakan secara <strong class="text-brand-gold">Online Stage</strong> dengan babak kualifikasi penyisihan grup hingga <strong class="text-brand-orange">Grand Final Live Stream</strong> di YouTube Official FF Arena.
+                    </p>
+
+                    <!-- Steps Timeline -->
+                    <div class="mt-8 space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-orange/20 border border-brand-orange flex items-center justify-center font-orbitron font-extrabold text-brand-orange shrink-0 shadow-lg">
+                                01
+                            </div>
+                            <div>
+                                <h4 class="font-orbitron font-bold text-white text-base">Penutupan Pendaftaran</h4>
+                                <p class="text-xs text-gray-300 mt-1 font-medium">15 November 2026 - Pukul 23:59 WIB (Atau setelah 64 Slot Penuh)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-gold/20 border border-brand-gold flex items-center justify-center font-orbitron font-extrabold text-brand-gold shrink-0 shadow-lg">
+                                02
+                            </div>
+                            <div>
+                                <h4 class="font-orbitron font-bold text-white text-base">Technical Meeting (TM) & Match Fix</h4>
+                                <p class="text-xs text-gray-300 mt-1 font-medium">16 November 2026 - Pukul 19:30 WIB via Discord / WA Group</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-cyan/20 border border-brand-cyan flex items-center justify-center font-orbitron font-extrabold text-brand-cyan shrink-0 shadow-lg">
+                                03
+                            </div>
+                            <div>
+                                <h4 class="font-orbitron font-bold text-white text-base">Babak Kualifikasi (Qualifier)</h4>
+                                <p class="text-xs text-gray-300 mt-1 font-medium">17 - 18 November 2026 - Map Bermuda & Purgatory (Best of 3)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-purple/20 border border-brand-purple flex items-center justify-center font-orbitron font-extrabold text-brand-purple shrink-0 shadow-lg">
+                                04
+                            </div>
+                            <div>
+                                <h4 class="font-orbitron font-bold text-white text-base">Grand Final (12 Tim Terbaik)</h4>
+                                <p class="text-xs text-gray-300 mt-1 font-medium">20 November 2026 - Map Bermuda, Purgatory, Kalahari, Alpine (Best of 5 Live)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rules Box -->
+                <div class="glass-card p-8 rounded-2xl border-l-4 border-l-brand-orange shadow-2xl">
+                    <h3 class="font-orbitron text-xl font-bold text-white flex items-center mb-6">
+                        <i class="fa-solid fa-shield-halved text-brand-orange mr-3"></i> PERATURAN SINGKAT
+                    </h3>
+                    <ul class="space-y-4 text-sm text-gray-200 font-medium">
+                        <li class="flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                            <span><strong class="text-white">Perangkat:</strong> HP / Smartphone ONLY (Strictly No Emulator / PC).</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                            <span><strong class="text-white">Komposisi Tim:</strong> 4 Pemain Inti + Maksimal 1 Pemain Cadangan.</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                            <span><strong class="text-white">Level & Rank Min:</strong> Level Akun Minimal Lv. 20, Rank Min Platinum.</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fa-solid fa-xmark text-red-500 mt-1"></i>
+                            <span><strong class="text-white">Fairplay:</strong> Dilarang keras menggunakan Cheat, Script, Config, atau Bug abuse. Diskualifikasi Permanen!</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fa-solid fa-clock text-brand-gold mt-1"></i>
+                            <span><strong class="text-white">Toleransi Keterlambatan:</strong> Maksimal 10 menit dari jadwal Custom Room dibuat.</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 pt-4 border-t border-gray-800 text-center">
+                        <button onclick="openRulesModal()" class="text-xs font-orbitron font-bold text-brand-orange hover:text-brand-gold hover:underline uppercase transition-colors">
+                            Lihat Peraturan Lengkap & Point System &rarr;
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pendaftaran" class="py-16 relative overflow-hidden z-10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="px-3 py-1 bg-brand-orange/20 border border-brand-orange/50 text-brand-orange font-orbitron text-xs rounded-full uppercase font-extrabold">Formulir Resmi</span>
+                <h2 class="font-orbitron text-2xl sm:text-4xl font-extrabold uppercase text-white mt-2">
+                    FORM PENDAFTARAN TIM
+                </h2>
+                <p class="text-gray-300 text-sm mt-2 font-semibold">Isi data skuatmu dengan teliti dan benar. Pastikan UID & No WhatsApp aktif.</p>
+            </div>
+
+            <!-- Multi-step Form Box -->
+            <div class="glass-card p-6 sm:p-10 rounded-2xl shadow-2xl relative border-t-2 border-t-brand-orange">
+                <form id="ff-register-form" onsubmit="handleRegistration(event)">
+                    
+                    <!-- SECTION 1: INFORMASI TIM -->
+                    <div class="mb-8">
+                        <h3 class="font-orbitron text-lg font-bold text-brand-gold mb-4 flex items-center border-b border-gray-700/80 pb-2">
+                            <span class="w-7 h-7 bg-brand-gold text-black rounded-full flex items-center justify-center text-xs mr-2 font-black">1</span>
+                            INFORMASI SQUAD / TIM
+                        </h3>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-rajdhani font-bold text-gray-200 uppercase mb-2">Nama Tim / Squad *</label>
+                                <input type="text" id="team-name" required placeholder="Contoh: EVOS REBORN" class="w-full bg-[#07090E]/90 border border-gray-700 rounded-lg px-4 py-3 text-white text-sm focus:border-brand-orange focus:ring-1 focus:ring-brand-orange outline-none transition-all">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-rajdhani font-bold text-gray-200 uppercase mb-2">Tag / Singkatan Tim *</label>
+                                <input type="text" id="team-tag" required placeholder="Contoh: EVOS" maxlength="5" class="w-full bg-[#07090E]/90 border border-gray-700 rounded-lg px-4 py-3 text-white text-sm focus:border-brand-orange focus:ring-1 focus:ring-brand-orange outline-none transition-all uppercase">
+                            </div>
+
+                            <div class="sm:col-span-2">
+                                <label class="block text-xs font-rajdhani font-bold text-gray-200 uppercase mb-2">Nomor WhatsApp Kapten (Untuk Info Room) *</label>
+                                <input type="tel" id="captain-wa" required placeholder="081234567890" class="w-full bg-[#07090E]/90 border border-gray-700 rounded-lg px-4 py-3 text-white text-sm focus:border-brand-orange focus:ring-1 focus:ring-brand-orange outline-none transition-all">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SECTION 2: DATA PEMAIN INTI -->
+                    <div class="mb-8">
+                        <h3 class="font-orbitron text-lg font-bold text-brand-orange mb-4 flex items-center border-b border-gray-700/80 pb-2">
+                            <span class="w-7 h-7 bg-brand-orange text-black rounded-full flex items-center justify-center text-xs mr-2 font-black">2</span>
+                            DATA PEMAIN INTI (4 PLAYER)
+                        </h3>
+
+                        <!-- Kapten / Player 1 -->
+                        <div class="bg-[#07090E]/80 p-4 rounded-xl border border-gray-700/80 mb-4 shadow-inner">
+                            <span class="text-xs font-orbitron font-bold text-brand-gold uppercase block mb-3"><i class="fa-solid fa-crown mr-1"></i> Kapten Tim (Player 1)</span>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <input type="text" id="p1-nick" required placeholder="Nickname In-Game" class="w-full bg-[#0E121A] border border-gray-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white focus:border-brand-orange outline-none">
+                                </div>
+                                <div>
+                                    <input type="number" id="p1-id" required placeholder="User ID / UID (Angka)" class="w-full bg-[#0E121A] border border-gray-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white focus:border-brand-orange outline-none">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Player 2 -->
+                        <div class="bg-[#07090E]/80 p-4 rounded-xl border border-gray-700/80 mb-4 shadow-inner">
+                            <span class="text-xs font-orbitron font-bold text-gray-300 uppercase block mb-3">Player 2</span>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <input type="text" id="p2-nick" required placeholder="Nickname In-Game" class="w-full bg-[#0E121A] border border-gray-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white focus:border-brand-orange outline-none">
+                                </div>
+                                <div>
+                                    <input type="number" id="p2-id" required placeholder="User ID / UID" class="w-full bg-[#0E121A] border border-gray-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white focus:border-brand-orange outline-none">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Player 3 -->
+                        <div class="bg-[#07090E]/80 p-4 rounded-xl border border-gray-700/80 mb-4 shadow-inner">
+                            <span class="text-xs font-orbitron font-bold text-gray-300 uppercase block mb-3">Player 3</span>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <input type="text" id="p3-nick" required placeholder="Nickname In-Game" class="w-full bg-[#0E121A] border border-gray-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white focus:border-brand-orange outline-none">
+                                </div>
+                                <div>
+                                    <input type="number" id="p3-id" required placeholder="User ID / UID" class="w-full bg-[#0E121A] border border-gray-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white focus:border-brand-orange outline-none">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Player 4 -->
+                        <div class="bg-[#07090E]/80 p-4 rounded-xl border border-gray-700/80 mb-4 shadow-inner">
+                            <span class="text-xs font-orbitron font-bold text-gray-300 uppercase block mb-3">Player 4</span>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <input type="text" id="p4-nick" required placeholder="Nickname In-Game" class="w-full bg-[#0E121A] border border-gray-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white focus:border-brand-orange outline-none">
+                                </div>
+                                <div>
+                                    <input type="number" id="p4-id" required placeholder="User ID / UID" class="w-full bg-[#0E121A] border border-gray-700 rounded-lg px-3 py-2 text-xs sm:text-sm text-white focus:border-brand-orange outline-none">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cadangan (Optional) -->
+                        <div class="bg-[#07090E]/50 p-4 rounded-xl border border-gray-800">
+                            <span class="text-xs font-orbitron font-bold text-gray-400 uppercase block mb-3">Player Cadangan (Opsional)</span>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <input type="text" id="p5-nick" placeholder="Nickname Cadangan (Opsional)" class="w-full bg-[#0E121A] border border-gray-800 rounded-lg px-3 py-2 text-xs sm:text-sm text-white focus:border-brand-orange outline-none">
+                                </div>
+                                <div>
+                                    <input type="number" id="p5-id" placeholder="User ID / UID (Opsional)" class="w-full bg-[#0E121A] border border-gray-800 rounded-lg px-3 py-2 text-xs sm:text-sm text-white focus:border-brand-orange outline-none">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SECTION 3: VERIFIKASI & SYARAT -->
+                    <div class="mb-8">
+                        <h3 class="font-orbitron text-lg font-bold text-brand-cyan mb-4 flex items-center border-b border-gray-700/80 pb-2">
+                            <span class="w-7 h-7 bg-brand-cyan text-black rounded-full flex items-center justify-center text-xs mr-2 font-black">3</span>
+                            PERSYARATAN BUKTI FOLLOW
+                        </h3>
+
+                        <div class="bg-[#07090E]/90 p-4 rounded-xl border border-brand-cyan/40 text-xs text-gray-200 space-y-3 font-medium">
+                            <p>Pendaftaran turnamen ini 100% GRATIS dengan syarat wajib memfollow akun Instagram panitia:</p>
+                            <div class="flex items-center space-x-2 text-brand-gold font-bold">
+                                <i class="fa-brands fa-instagram text-base"></i>
+                                <span>@ff.championship.id</span>
+                            </div>
+                            <div class="mt-2">
+                                <label class="flex items-center space-x-2 cursor-pointer">
+                                    <input type="checkbox" required class="rounded bg-gray-800 border-gray-700 text-brand-orange focus:ring-0">
+                                    <span>Saya dan seluruh tim telah membaca peraturan & setuju mematuhi Fairplay.</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" id="submit-btn" class="w-full py-4 bg-gradient-to-r from-brand-orange via-brand-gold to-brand-orange bg-[length:200%_100%] hover:bg-right font-orbitron font-black text-black text-lg rounded-xl shadow-2xl shadow-brand-orange/40 transition-all duration-300 uppercase tracking-wider flex items-center justify-center hover:scale-[1.01] active:scale-95">
+                        <i class="fa-solid fa-paper-plane mr-2"></i> KIRIM PENDAFTARAN SKUAT
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="tim" class="py-16 bg-[#07090E]/70 border-b border-gray-800/80 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8">
+                <div>
+                    <span class="text-brand-orange font-rajdhani font-bold text-sm uppercase">Live Database</span>
+                    <h2 class="font-orbitron text-2xl sm:text-4xl font-extrabold uppercase text-white">
+                        DAFTAR TIM TERDAFTAR
+                    </h2>
+                    <p class="text-gray-300 text-sm mt-1 font-semibold">Daftar tim yang telah resmi terdaftar di sistem turnamen.</p>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="mt-4 md:mt-0 relative w-full md:w-72">
+                    <input type="text" id="search-team-input" onkeyup="filterTeams()" placeholder="Cari nama tim / tag..." class="w-full bg-[#0E121A] border border-gray-700 rounded-lg pl-10 pr-4 py-2 text-sm text-white focus:border-brand-orange outline-none">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-3 text-gray-400 text-xs"></i>
+                </div>
+            </div>
+
+            <!-- Teams Dynamic Grid -->
+            <div id="teams-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Javascript dynamic team cards render here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="bracket" class="py-16 border-b border-gray-800/80 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-brand-cyan font-rajdhani font-bold text-sm uppercase tracking-wider">Skema Turnamen</span>
+                <h2 class="font-orbitron text-2xl sm:text-4xl font-extrabold uppercase text-white mt-1">
+                    BAGAN <span class="text-brand-cyan">PERTANDINGAN</span>
+                </h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-brand-cyan to-brand-purple mx-auto mt-2 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div class="glass-card p-6 rounded-2xl border-t-2 border-t-brand-cyan">
+                    <span class="px-3 py-1 bg-brand-cyan/20 text-brand-cyan font-orbitron font-bold text-xs rounded-full">STAGE 1: QUALIFIER</span>
+                    <h3 class="font-orbitron font-bold text-white text-lg mt-3">64 SQUAD &rarr; 24 SQUAD</h3>
+                    <p class="text-xs text-gray-300 mt-2 font-medium">Dibagi menjadi 4 Grup (Grup A, B, C, D). Top 6 dari setiap grup lolos ke babak Semifinal.</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl border-t-2 border-t-brand-gold">
+                    <span class="px-3 py-1 bg-brand-gold/20 text-brand-gold font-orbitron font-bold text-xs rounded-full">STAGE 2: SEMIFINAL</span>
+                    <h3 class="font-orbitron font-bold text-white text-lg mt-3">24 SQUAD &rarr; 12 SQUAD</h3>
+                    <p class="text-xs text-gray-300 mt-2 font-medium">Dibagi 2 Grup (Grup Semifinal 1 & 2). Top 6 dari masing-masing grup melaju ke Grand Final.</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl border-t-2 border-t-brand-orange glow-orange">
+                    <span class="px-3 py-1 bg-brand-orange/20 text-brand-orange font-orbitron font-bold text-xs rounded-full">STAGE 3: GRAND FINAL</span>
+                    <h3 class="font-orbitron font-bold text-white text-lg mt-3">12 SQUAD TERBAIK</h3>
+                    <p class="text-xs text-gray-300 mt-2 font-medium">5 Match Live Streaming (Bermuda, Purgatory, Kalahari, Alpine, Bermuda) untuk mahkota Juara!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ulasan" class="py-16 border-b border-gray-800/80 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-brand-orange font-rajdhani font-bold text-sm uppercase tracking-wider">Pengalaman Kapten & Players</span>
+                <h2 class="font-orbitron text-2xl sm:text-4xl font-extrabold uppercase text-white mt-1">
+                    ULASAN <span class="text-brand-gold text-glow-gold">PESERTA</span>
+                </h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-brand-orange to-brand-gold mx-auto mt-2 rounded-full"></div>
+                <p class="mt-3 text-gray-300 text-sm font-semibold">Apa kata para kapten tim dan pemain yang pernah mengikuti turnamen FF Arena Championship.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Ghofur -->
+                <div class="glass-card p-6 rounded-2xl hover:-translate-y-2 transition-transform duration-300 relative border-t-2 border-t-brand-orange">
+                    <div class="flex items-center space-x-1 text-brand-gold mb-4 text-xs">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs sm:text-sm text-gray-200 leading-relaxed italic mb-6 font-medium">
+                        "Turnamennya sangat profesional! Jadwal pembagian ID & Pass Custom Room selalu tepat waktu, dan proses pencairan prize pool sangat cepat tanpa ada potongan apapun. Skuad kami pasti ikut lagi di Season ini!"
+                    </p>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-gray-800">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-brand-orange to-brand-gold flex items-center justify-center font-orbitron font-bold text-black text-sm shadow-md">
+                            G
+                        </div>
+                        <div>
+                            <h4 class="font-orbitron font-bold text-white text-sm">Ghofur</h4>
+                            <p class="text-[11px] text-brand-orange font-rajdhani font-bold">Kapten Squad Apex Predators</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vall Zone -->
+                <div class="glass-card p-6 rounded-2xl hover:-translate-y-2 transition-transform duration-300 relative border-t-2 border-t-brand-cyan">
+                    <div class="flex items-center space-x-1 text-brand-gold mb-4 text-xs">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs sm:text-sm text-gray-200 leading-relaxed italic mb-6 font-medium">
+                        "Sistem pendaftarannya simpel dan canggih banget, langsung otomatis dapet e-ticket plus QR pass. Adminnya juga ramah dan responnya cepat via WhatsApp. Recommended banget buat tournament organizer!"
+                    </p>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-gray-800">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-brand-cyan to-brand-purple flex items-center justify-center font-orbitron font-bold text-white text-sm shadow-md">
+                            VZ
+                        </div>
+                        <div>
+                            <h4 class="font-orbitron font-bold text-white text-sm">Vall Zone</h4>
+                            <p class="text-[11px] text-brand-cyan font-rajdhani font-bold">Leader Vall Esports / Content Creator</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Borman Garcia -->
+                <div class="glass-card p-6 rounded-2xl hover:-translate-y-2 transition-transform duration-300 relative border-t-2 border-t-brand-gold">
+                    <div class="flex items-center space-x-1 text-brand-gold mb-4 text-xs">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs sm:text-sm text-gray-200 leading-relaxed italic mb-6 font-medium">
+                        "Bagan match dan perhitungan poinnya sangat transparan dan fairplay. Gak ada cheat atau egrang yang lolos karena panitia tegas banget. Juara 2 Season kemarin bener-bener berkesan. Siap fight lagi!"
+                    </p>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-gray-800">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-brand-gold to-brand-orange flex items-center justify-center font-orbitron font-bold text-black text-sm shadow-md">
+                            BG
+                        </div>
+                        <div>
+                            <h4 class="font-orbitron font-bold text-white text-sm">Borman Garcia</h4>
+                            <p class="text-[11px] text-brand-gold font-rajdhani font-bold">Runner-up Season 4 (Garcia Empire)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-16 bg-[#07090E]/80 border-t border-gray-800/80 relative z-10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="font-orbitron text-2xl sm:text-4xl font-extrabold uppercase text-white">
+                    PERTANYAAN UMUM (FAQ)
+                </h2>
+                <p class="text-gray-300 text-sm mt-1 font-semibold">Informasi penting seputar kendala dan teknis perlombaan.</p>
+            </div>
+
+            <div class="space-y-4">
+                <details class="glass-card p-4 rounded-xl border border-gray-800 group transition-all">
+                    <summary class="font-orbitron font-bold text-white text-sm cursor-pointer list-none flex justify-between items-center">
+                        <span>Apakah pendaftaran benar-benar gratis?</span>
+                        <i class="fa-solid fa-chevron-down text-brand-orange group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-xs text-gray-300 mt-3 leading-relaxed font-medium">
+                        Ya! Pendaftaran 100% gratis tanpa dipungut biaya apapun. Cukup ikuti persyaratan follow media sosial panitia penyelenggara.
+                    </p>
+                </details>
+
+                <details class="glass-card p-4 rounded-xl border border-gray-800 group transition-all">
+                    <summary class="font-orbitron font-bold text-white text-sm cursor-pointer list-none flex justify-between items-center">
+                        <span>Bolehkah pemain menggunakan Emulator (PC/Laptop)?</span>
+                        <i class="fa-solid fa-chevron-down text-brand-orange group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-xs text-gray-300 mt-3 leading-relaxed font-medium">
+                        TIDAK BOLEH. Seluruh peserta WAJIB menggunakan Smartphone / Tablet Android/iOS. Penggunaan PC/Emulator akan langsung terdeteksi dan diskualifikasi.
+                    </p>
+                </details>
+
+                <details class="glass-card p-4 rounded-xl border border-gray-800 group transition-all">
+                    <summary class="font-orbitron font-bold text-white text-sm cursor-pointer list-none flex justify-between items-center">
+                        <span>Di mana ID & Password Custom Room akan dibagikan?</span>
+                        <i class="fa-solid fa-chevron-down text-brand-orange group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-xs text-gray-300 mt-3 leading-relaxed font-medium">
+                        ID & Password Room akan dikirimkan langsung ke WhatsApp Kapten Tim serta di-share di Grup Whatsapp Kapten 15 menit sebelum match dimulai.
+                    </p>
+                </details>
+            </div>
+
+            <!-- WhatsApp Admin Direct Contact Box with 081242588075 -->
+            <div class="mt-12 text-center glass-card p-6 sm:p-8 rounded-2xl border border-emerald-500/50 shadow-2xl">
+                <h3 class="font-orbitron font-bold text-xl text-white">Butuh Bantuan Admin / CS?</h3>
+                <p class="text-xs sm:text-sm text-gray-300 mt-1 font-semibold">Ada kendala dalam pendaftaran? Kontak panitia fast-response kami.</p>
+                <div class="mt-3 text-lg font-rajdhani font-black text-brand-gold flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-phone text-emerald-400"></i>
+                    <span>081242588075</span>
+                </div>
+                <a href="https://wa.me/6281242588075?text=Halo%20Admin%20FF%20Championship,%20saya%20mau%20tanya%20seputar%20pendaftaran" target="_blank" class="mt-4 inline-flex items-center px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-black font-orbitron font-extrabold text-sm rounded-xl transition-all shadow-lg shadow-emerald-500/30 hover:scale-105 active:scale-95">
+                    <i class="fa-brands fa-whatsapp text-xl mr-2"></i> CHAT WHATSAPP (081242588075)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark border-t border-gray-800/80 py-8 text-center text-xs text-gray-400 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3 font-medium">
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-4">
+                <div class="flex items-center space-x-2">
+                    <span class="font-orbitron font-bold text-white text-sm">FF<span class="text-brand-orange">ARENA</span></span>
+                    <span>&bull; Free Fire Esports Tournament</span>
+                </div>
+                <span class="hidden sm:inline text-gray-600">|</span>
+                <div class="text-gray-300 font-semibold">
+                    <i class="fa-solid fa-headset text-brand-gold mr-1"></i> CS Panitia: <span class="text-white font-extrabold">081242588075</span>
+                </div>
+            </div>
+            <p>&copy; 2026 Free Fire Championship. All rights reserved. Garena Free Fire registered trademark of Garena Online.</p>
+        </div>
+    </footer>
+
+    <div id="ticket-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md hidden">
+        <div class="glass-card max-w-lg w-full p-6 sm:p-8 rounded-2xl border-2 border-brand-orange relative text-center glow-orange">
+            <button onclick="closeTicketModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="w-16 h-16 bg-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-emerald-500 text-emerald-400 text-3xl">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 class="font-orbitron font-black text-2xl text-white">PENDAFTARAN BERHASIL!</h3>
+            <p class="text-xs text-gray-300 mt-1 font-medium">Skuatmu telah resmi terdaftar di FF Arena Championship 2026.</p>
+
+            <!-- Digital E-Ticket Pass -->
+            <div class="mt-6 bg-[#07090E]/95 p-4 rounded-xl border border-gray-700 text-left relative overflow-hidden shadow-inner">
+                <div class="flex justify-between items-center border-b border-gray-800 pb-2 mb-3">
+                    <span class="font-orbitron font-bold text-xs text-brand-gold">E-TICKET PASS</span>
+                    <span id="ticket-id" class="font-orbitron font-bold text-xs text-brand-orange">FF-2026-999</span>
+                </div>
+                <div class="space-y-1 text-xs">
+                    <p class="text-gray-400">Tim: <span id="ticket-team-name" class="text-white font-bold"></span></p>
+                    <p class="text-gray-400">Kapten: <span id="ticket-captain" class="text-white font-bold"></span></p>
+                    <p class="text-gray-400">Waktu: <span id="ticket-time" class="text-white font-bold"></span></p>
+                    <p class="text-gray-400">Status: <span class="text-emerald-400 font-bold">TERVERIFIKASI</span></p>
+                </div>
+                <!-- Mock QR Code -->
+                <div class="mt-4 flex justify-center">
+                    <div class="bg-white p-2 rounded-lg">
+                        <i class="fa-solid fa-qrcode text-5xl text-black"></i>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-[11px] text-gray-400 mt-4 leading-relaxed">
+                Simpan tangkapan layar (screenshot) tiket ini. Admin akan memasukkan kapten ke Grup WhatsApp via <strong>081242588075</strong>.
+            </p>
+
+            <button onclick="closeTicketModal()" class="mt-6 w-full py-3 bg-brand-orange font-orbitron font-bold text-black rounded-lg hover:bg-brand-gold transition-colors">
+                TUTUP & LIHAT DAFTAR TIM
+            </button>
+        </div>
+    </div>
+
+    <div id="rules-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md hidden">
+        <div class="glass-card max-w-2xl w-full p-6 sm:p-8 rounded-2xl border border-brand-gold relative max-h-[85vh] overflow-y-auto">
+            <button onclick="closeRulesModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 class="font-orbitron font-extrabold text-2xl text-brand-gold mb-4 flex items-center">
+                <i class="fa-solid fa-scroll mr-2"></i> BUKU PERATURAN LENGKAP (RULEBOOK)
+            </h3>
+            
+            <div class="space-y-4 text-xs sm:text-sm text-gray-200 leading-relaxed font-medium">
+                <div>
+                    <h4 class="font-orbitron font-bold text-white text-sm mb-1 text-brand-orange">1. SISTEM MATCH & MAP</h4>
+                    <p>Match menggunakan format Squad Battle Royale. Map yang dimainkan: Bermuda, Purgatory, Kalahari, dan Alpine. Pengunaan Gun Skin / Character Skill diperbolehkan standar kompetisi esports.</p>
+                </div>
+                <div>
+                    <h4 class="font-orbitron font-bold text-white text-sm mb-1 text-brand-orange">2. PERHITUNGAN POIN</h4>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Booyah (Juara 1): 12 Poin</li>
+                        <li>Peringkat 2: 9 Poin</li>
+                        <li>Peringkat 3: 8 Poin</li>
+                        <li>Peringkat 4: 7 Poin</li>
+                        <li>Peringkat 5: 6 Poin</li>
+                        <li>Setiap 1 Kill = 1 Poin Tambahan</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-orbitron font-bold text-white text-sm mb-1 text-brand-orange">3. LARANGAN & SANKSI</h4>
+                    <p>Penggunaan cheat/mod/script akan berdampak pada Diskualifikasi Permanen & Blacklist seluruh anggota squad dari semua kompetisi mendatang.</p>
+                </div>
+            </div>
+
+            <button onclick="closeRulesModal()" class="mt-6 w-full py-3 bg-brand-gold font-orbitron font-bold text-black rounded-lg hover:bg-white transition-colors">
+                SAYA MENGERTI
+            </button>
+        </div>
+    </div>
+
+    <script>
+        /* Sample Initial Registered Teams Data */
+        const initialTeams = [
+            { id: "FF-101", name: "EVOS REBORN", tag: "EVOS", captain: "EVOS.Street", registeredAt: "10 Nov, 14:20", status: "Terverifikasi" },
+            { id: "FF-102", name: "RRQ KINGDOM", tag: "RRQ", captain: "RRQ.Legaeloth", registeredAt: "10 Nov, 15:05", status: "Terverifikasi" },
+            { id: "FF-103", name: "ONIC CYBER", tag: "ONIC", captain: "ONIC.ZAAACK", registeredAt: "11 Nov, 09:12", status: "Terverifikasi" },
+            { id: "FF-104", name: "BIGETRON BYTES", tag: "BTR", captain: "BTR.LuxxyFF", registeredAt: "11 Nov, 11:45", status: "Terverifikasi" },
+            { id: "FF-105", name: "LOUVRE ESPORTS", tag: "LVR", captain: "LVR.AURA", registeredAt: "11 Nov, 18:30", status: "Terverifikasi" },
+            { id: "FF-106", name: "GEEK FAM SQUAD", tag: "GEEK", captain: "GEEK.Abee", registeredAt: "12 Nov, 10:00", status: "Terverifikasi" }
+        ];
+
+        /* Retrieve LocalStorage Teams */
+        function getRegisteredTeams() {
+            const stored = localStorage.getItem("ff_registered_teams");
+            if (!stored) {
+                localStorage.setItem("ff_registered_teams", JSON.stringify(initialTeams));
+                return initialTeams;
+            }
+            return JSON.parse(stored);
+        }
+
+        /* Render Team List to Grid */
+        function renderTeamsList(teamsToRender = null) {
+            const teams = teamsToRender || getRegisteredTeams();
+            const gridContainer = document.getElementById("teams-grid");
+            gridContainer.innerHTML = "";
+
+            if (teams.length === 0) {
+                gridContainer.innerHTML = `
+                    <div class="col-span-full text-center py-8 text-gray-400 font-orbitron text-sm">
+                        Belum ada tim ditemukan.
+                    </div>
+                `;
+                return;
+            }
+
+            teams.forEach(team => {
+                const card = document.createElement("div");
+                card.className = "glass-card p-4 rounded-xl border border-gray-700/80 hover:border-brand-orange/60 transition-all flex items-center justify-between";
+                card.innerHTML = `
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-brand-orange/20 border border-brand-orange/50 rounded-lg flex items-center justify-center font-orbitron font-extrabold text-brand-orange text-xs shadow-md">
+                            ${team.tag}
+                        </div>
+                        <div>
+                            <h4 class="font-orbitron font-bold text-white text-sm">${team.name}</h4>
+                            <p class="text-[11px] text-gray-300">Kapten: <span class="text-brand-gold font-bold">${team.captain}</span></p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <span class="inline-block px-2 py-0.5 bg-emerald-500/20 text-emerald-300 text-[10px] font-bold rounded border border-emerald-500/30 mb-1">
+                            ${team.status || 'Terdaftar'}
+                        </span>
+                        <div class="text-[10px] text-gray-400">${team.registeredAt}</div>
+                    </div>
+                `;
+                gridContainer.appendChild(card);
+            });
+
+            /* Update Slot Counter Display */
+            const totalSlot = 64;
+            const filledSlot = teams.length;
+            document.getElementById("slot-counter").innerText = `${filledSlot} / ${totalSlot}`;
+        }
+
+        /* Handle Form Submit Registration */
+        function handleRegistration(e) {
+            e.preventDefault();
+
+            const teamName = document.getElementById("team-name").value.trim();
+            const teamTag = document.getElementById("team-tag").value.trim().toUpperCase();
+            const captainWA = document.getElementById("captain-wa").value.trim();
+            const captainNick = document.getElementById("p1-nick").value.trim();
+
+            const newId = "FF-2026-" + Math.floor(100 + Math.random() * 900);
+            const now = new Date();
+            const dateStr = now.toLocaleDateString('id-ID', { day: 'numeric', month: 'short' }) + `, ${now.getHours()}:${now.getMinutes() < 10 ? '0' : ''}${now.getMinutes()}`;
+
+            const newTeam = {
+                id: newId,
+                name: teamName,
+                tag: teamTag,
+                captain: captainNick,
+                registeredAt: dateStr,
+                status: "Terverifikasi"
+            };
+
+            /* Save into LocalStorage */
+            const currentTeams = getRegisteredTeams();
+            currentTeams.unshift(newTeam);
+            localStorage.setItem("ff_registered_teams", JSON.stringify(currentTeams));
+
+            /* Update Ticket Modal View */
+            document.getElementById("ticket-id").innerText = newId;
+            document.getElementById("ticket-team-name").innerText = teamName;
+            document.getElementById("ticket-captain").innerText = captainNick;
+            document.getElementById("ticket-time").innerText = dateStr;
+
+            /* Show Modal */
+            document.getElementById("ticket-modal").classList.remove("hidden");
+
+            /* Refresh List */
+            renderTeamsList();
+
+            /* Reset Form Input */
+            document.getElementById("ff-register-form").reset();
+        }
+
+        /* Filter Registered Teams */
+        function filterTeams() {
+            const query = document.getElementById("search-team-input").value.toLowerCase();
+            const allTeams = getRegisteredTeams();
+            const filtered = allTeams.filter(t => 
+                t.name.toLowerCase().includes(query) || 
+                t.tag.toLowerCase().includes(query) || 
+                t.captain.toLowerCase().includes(query)
+            );
+            renderTeamsList(filtered);
+        }
+
+        /* Modals & Drawer Controls */
+        function closeTicketModal() {
+            document.getElementById("ticket-modal").classList.add("hidden");
+        }
+
+        function openRulesModal() {
+            document.getElementById("rules-modal").classList.remove("hidden");
+        }
+
+        function closeRulesModal() {
+            document.getElementById("rules-modal").classList.add("hidden");
+        }
+
+        function toggleMenu() {
+            const menu = document.getElementById("mobile-menu");
+            menu.classList.toggle("hidden");
+        }
+
+        document.getElementById("mobile-menu-btn").addEventListener("click", toggleMenu);
+
+        /* Countdown Timer Timer Function */
+        function startCountdown() {
+            const targetDate = new Date();
+            targetDate.setDate(targetDate.getDate() + 5);
+
+            setInterval(() => {
+                const now = new Date().getTime();
+                const diff = targetDate - now;
+
+                if (diff <= 0) return;
+
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+                document.getElementById("timer-days").innerText = days < 10 ? "0" + days : days;
+                document.getElementById("timer-hours").innerText = hours < 10 ? "0" + hours : hours;
+                document.getElementById("timer-minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
+                document.getElementById("timer-seconds").innerText = seconds < 10 ? "0" + seconds : 
